@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 30px 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px gray double;
+}
+.logo{
+  align-self: flex-end;
+  font-size: 35px;
+  font-family: 'Mali', cursive;
+}
+.logo i{
+  margin-left: 10px;
+}
+nav{
+  display: flex;
+  position: relative;
+}
+.navitem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
+}
+.navitem:hover{
+  top: -8px;
+}
+.navitem:hover .navitem__text{
+  color:black;
+}
+.navitem__icon{
+  width: 30px;
+  height: 20px;
+  background-image: url("dogs.jpg");
+  background-repeat: no-repeat;
+  background-position: 5px -2px;
+  background-size: 230%;
+}
+nav .navitem:nth-child(2) .navitem__icon{
+  background-position: 5px -24px;
+}
+nav .navitem:nth-child(3) .navitem__icon{
+  background-position: 5px -45px;
+}
+nav .navitem:nth-child(4) .navitem__icon{
+  background-position: -42px -45px;
+}
+nav .navitem:nth-child(5) .navitem__icon{
+  background-position: -44px -23px;
+}
+.navitem__text{
+  text-decoration: none;
+  color: rgb(106, 108, 108);
+  font-size: 15px;
+}
+.search{
+  position: absolute;
+  top:-40px;
+  right:0;
+}
+.search__text{
+  border: 2px solid rgba(138,207,184,0.79);
+}
+.search__button{
+  border:none;
+  background-color: rgba(138,207,184,0.79);
+  padding: 3px;
+}
+.dogpic{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(254,221,132,0.4);
+  padding-bottom: 100px;
+  margin-top: 10px;
+}
+.dogpic__container{
+  width: 300px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+.dogpic .dogpic__container:nth-child(1){
+  background-image: url("dogpic1.jpeg");
+}
+.dogpic .dogpic__container:nth-child(2){
+  background-image: url("dogpic2.jpeg");
+  position: relative;
+  top: 50px;
+}
+.dogpic .dogpic__container:nth-child(3){
+  background-image: url("dogpic3.jpeg");
+}
